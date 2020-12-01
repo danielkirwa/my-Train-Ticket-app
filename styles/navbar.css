@@ -1,0 +1,97 @@
+.overlay{
+	background: dodgerblue;
+	padding: 2%;
+}
+.navbarholder{
+	background: dodgerblue;
+	padding: 2%;
+}
+.navbarholder nav a{
+	transition: all 1s ease;
+	background: dodgerblue;
+	padding: 1% 2%;
+	color: white;
+	border-bottom: 2px solid crimson ;
+	border-bottom-right-radius: 5%;
+	border-bottom-left-radius: 5%;
+}
+nav a:hover{
+	transition: all 1s ease;
+	background: crimson;
+	border-bottom-right-radius: 0%;
+	border-bottom-left-radius: 0%;
+	border-top-right-radius: 5%;
+	border-top-left-radius: 5%;
+
+}
+.navbarholder .active{
+	background: crimson;
+	border-bottom-right-radius: 0%;
+	border-bottom-left-radius: 0%;
+	border-top-right-radius: 5%;
+	border-top-left-radius: 5%;
+}
+#checkmenubar, #check{
+	display: none;
+}
+
+
+@media(max-width: 800px){
+	.navbarholder{
+		height: 100%;
+	width: 40%;
+	background: teal;
+	left: -50%;
+	position: fixed;
+	z-index: 100;
+	transition: all 1s ease;
+}
+.navbarholder  a{
+	transition: all 1s ease;
+	display: block;
+	background: dodgerblue;
+	padding: 1% 2%;
+	line-height: 45px;
+	color: white;
+	border-bottom: 2px solid crimson ;
+	border-bottom-right-radius: 5%;
+	border-bottom-left-radius: 5%;
+	margin-top: 2%;
+}
+
+/* for respsiveness in small screens*/
+#checkmenubar{
+	display: block;
+}
+#check{
+	display: none;
+}
+#checkmenubar #btnclose, #checkmenubar #btnmenu{
+	position: absolute;
+	cursor: pointer;
+}
+#checkmenubar #btnclose{
+	left: -45%;
+	transition: all 1s ease;
+	position: fixed;
+}
+#checkmenubar #btnmenu{
+	transition: all 1s ease;	
+	position: fixed;
+}
+#check:checked ~ .navbarholder{
+	left:0%; 
+}
+#check:checked ~ #checkmenubar #btnmenu{
+	left:3%;
+	opacity: 0;
+	pointer-events: none;
+}
+#check:checked ~ #checkmenubar #btnclose{
+	left:35%;
+	transition: all 1s ease;
+}
+#check:checked ~ section{
+	margin-left: 35%;
+}
+}
