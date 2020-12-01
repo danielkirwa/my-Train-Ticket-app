@@ -1,3 +1,4 @@
+/*start of navbar styling */
 .overlay{
 	background: dodgerblue;
 	padding: 2%;
@@ -34,17 +35,25 @@ nav a:hover{
 #checkmenubar, #check{
 	display: none;
 }
+section{
+	background: #FFF;
+	transition: all 1s;
+	padding: 1px;
+	display: block;
+	
+}
 
 
 @media(max-width: 800px){
 	.navbarholder{
 		height: 100%;
 	width: 40%;
-	background: teal;
+	background: dodgerblue;
 	left: -50%;
 	position: fixed;
 	z-index: 100;
 	transition: all 1s ease;
+	padding: 2%;
 }
 .navbarholder  a{
 	transition: all 1s ease;
@@ -57,6 +66,9 @@ nav a:hover{
 	border-bottom-right-radius: 5%;
 	border-bottom-left-radius: 5%;
 	margin-top: 2%;
+}
+.navbarholder .active{
+	margin-top: 26px;
 }
 
 /* for respsiveness in small screens*/
@@ -74,24 +86,27 @@ nav a:hover{
 	left: -45%;
 	transition: all 1s ease;
 	position: fixed;
+	z-index: 1000;
 }
 #checkmenubar #btnmenu{
 	transition: all 1s ease;	
-	position: fixed;
+	top: 2%;
 }
+/*determin what happens when imaged checkbox is checked/unchecked*/
 #check:checked ~ .navbarholder{
-	left:0%; 
+	left: 1.7%; 
 }
 #check:checked ~ #checkmenubar #btnmenu{
-	left:3%;
+	left: 3%;
 	opacity: 0;
 	pointer-events: none;
 }
 #check:checked ~ #checkmenubar #btnclose{
-	left:35%;
+	left: 35%;
 	transition: all 1s ease;
 }
 #check:checked ~ section{
-	margin-left: 35%;
+	margin-left: 40%;
 }
 }
+/*end of navbar styling */
