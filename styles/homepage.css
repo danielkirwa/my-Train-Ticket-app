@@ -1,0 +1,12 @@
+.background-image{
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 90vh;
+}
+.main-context{
+	height: 100%;
+	color: white;
+	padding: 2%;
+}

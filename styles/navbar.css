@@ -54,6 +54,7 @@ section{
 	z-index: 100;
 	transition: all 1s ease;
 	padding: 2%;
+	overflow-y: scroll;
 }
 .navbarholder  a{
 	transition: all 1s ease;
