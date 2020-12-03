@@ -4,9 +4,39 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 	height: 90vh;
+	background-position: 100% 0;
 }
 .main-context{
 	height: 100%;
 	color: white;
 	padding: 2%;
+}
+.main-context label{
+	font-size: 18px;
+}
+.main-context select{
+	border-radius: 5px;
+	width: 30%;
+	padding: 12px 8px;
+	background-color: #eeeeee;
+	border: 1px solid dodgerblue;
+}
+#btnhomebooknow{
+	width: 80%;
+	padding: 12px 8px;
+	background:dodgerblue;
+	font-size: 20px;
+	border-radius: 5px;
+}
+#btnhomebooknow:hover{
+	cursor: pointer;
+	border-color: crimson;
+}
+.main-context h1{
+	color: dodgerblue;
+}
+#depaturedate{
+	width: 28%;
+	padding: 12px 8px;
+	border-radius: 5px;
 }
