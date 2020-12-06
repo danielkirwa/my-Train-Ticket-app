@@ -40,3 +40,20 @@
 	padding: 12px 8px;
 	border-radius: 5px;
 }
+
+/* main page infor style */
+#cardinforholder{
+	display: flex;
+	width: 98%; 
+	background-color: red;
+	padding :1%;
+}
+  #cardinfor{
+	width: 40%;
+	box-shadow: 0 0 10px dodgerblue;
+	color: dodgerblue;
+	margin-left: 4%;
+	padding: 1%;
+	border-radius: 10px;
+
+}
