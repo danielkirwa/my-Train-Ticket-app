@@ -40,6 +40,12 @@
 	padding: 12px 8px;
 	border-radius: 5px;
 }
+#insight{
+	width: 70%;
+	margin-left: 13%;
+	padding:1%;
+
+}
 
 /* main page infor style */
 #cardinforholder{
@@ -67,7 +73,5 @@
 	background-color: dodgerblue;
 	color: black;
 	font-size: 18px;
-	outline: none;
-	border:none;
 	cursor: pointer;
 }
