@@ -45,7 +45,6 @@
 #cardinforholder{
 	display: flex;
 	width: 98%; 
-	background-color: red;
 	padding :1%;
 }
   #cardinfor{
@@ -56,4 +55,19 @@
 	padding: 1%;
 	border-radius: 10px;
 
+}
+#cardinfor img{
+	border-radius: 10px;
+
+}
+#cardinfor button{
+	border-radius: 10px;
+	width: 90%;
+	padding: 12px 8px;
+	background-color: dodgerblue;
+	color: black;
+	font-size: 18px;
+	outline: none;
+	border:none;
+	cursor: pointer;
 }
