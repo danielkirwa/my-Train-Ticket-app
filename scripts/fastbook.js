@@ -8,7 +8,11 @@ function validateterminai() {
 	var destinstiontermineiname = destinstionterminei.options[destinstionterminei.selectedIndex].text;
 	var destinstiontermineicode =  destinstionterminei.value;
 
-	if (depeturetermineicode == 0) {
+	if(depeturetermineicode == 0 && destinstiontermineicode == 0){
+		alert("Kindly select  Terminai")
+		depetureterminei.style.border = "2px solid red";
+		destinstionterminei.style.border = "2px solid red";
+	}else if (depeturetermineicode == 0) {
 		alert("Kindly select Take off Terminai")
 	}else if( destinstiontermineicode == 0){
 		alert("Kindly select destination Terminai");
@@ -18,6 +22,8 @@ function validateterminai() {
 		alert("Good to take  off");
 		console.log( "form" + "" +depeturetermineicode + " "+ "" + depeturetermineiname + "detination " +
 		destinstiontermineicode +  "" +"" + destinstiontermineiname );
+		depetureterminei.style.border = "2px solid green";
+		destinstionterminei.style.border = "2px solid green";
 	}
 
 
