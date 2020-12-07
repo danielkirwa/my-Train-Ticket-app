@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
 	<title></title>
 	<meta name="viewport" content="width=divise-width, initial-scale=1">
 	 <link rel="stylesheet" type="text/css" href="styles/navbar.css">
@@ -48,23 +52,23 @@
 		 <h2>Catch the next depature now</h2>
 	</p>
 	<br>
-	<form>
+	<!-- <form> -->
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>From :</label>
-		<select>
-			<option>Depature</option>
-			<option>NAIROBI</option>
-			<option>MOMBASA</option>
-			<option>KISUMU</option>
-			<option>NAKURU</option>
+		<select id="depatureoption">
+			<option value="0">Depature</option>
+			<option value="1">NAIROBI</option>
+			<option value="2">MOMBASA</option>
+			<option value="3">KISUMU</option>
+			<option value="4">NAKURU</option>
 		</select>
 		<br><br>
 		<label>Destination :</label>
-		<select>
-			<option>Arrival</option>
-			<option>NAIROBI</option>
-			<option>MOMBASA</option>
-			<option>KISUMU</option>
-			<option>NAKURU</option>
+		<select id="destinstionoption">
+			<option value="0">Arrival</option>
+			<option value="1">NAIROBI</option>
+			<option value="2">MOMBASA</option>
+			<option value="3">KISUMU</option>
+			<option value="4">NAKURU</option>
 		</select><br><br><br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<label>Date :</label>
@@ -98,8 +102,8 @@
 			<option>High-class</option>
 			
 		</select><br><br>
-		<button id="btnhomebooknow">Book Now</button>
-	</form>
+		<button id="btnhomebooknow" onclick="validateterminai()">Book Now</button>
+	<!-- </form> -->
 
 </center>
 </div>
@@ -134,6 +138,7 @@
  </div>
 
  </section> 
+ <script type="text/javascript" src="scripts/fastbook.js"></script>
 </body>
 </html>
 
