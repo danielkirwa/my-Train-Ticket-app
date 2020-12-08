@@ -5,11 +5,13 @@
 	background-position: center center;
 	height: 90vh;
 	background-position: 100% 0;
+	overflow: hidden;
 }
 .main-context{
 	height: 100%;
 	color: white;
 	padding: 2%;
+	overflow: hidden;
 }
 .main-context label{
 	font-size: 18px;
@@ -74,4 +76,31 @@
 	color: black;
 	font-size: 18px;
 	cursor: pointer;
+}
+.popupbookingform{
+	width: 70%;
+	background:#00000000;
+	height: 70vh;
+	margin-left: 15%;
+	overflow: hidden;
+	position: absolute;
+	top:200px;
+	display: none;
+
+}
+.popupbookingform label{
+	font-size: 18px;
+	color: white;
+}
+.popupbookingform select{
+	border-radius: 5px;
+	width: 40%;
+	padding: 12px 8px;
+	background-color: #eeeeee;
+	border: 2px solid dodgerblue;
+}
+#highclassdepaturedate{
+	width: 38%;
+	padding: 12px 8px;
+	border-radius: 5px;
 }
