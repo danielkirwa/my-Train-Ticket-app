@@ -86,7 +86,7 @@ var btndatetimevalidate = document.getElementById('depaturetimeoption');
 } )
 
 
- // poup booking form 
+ // popup booking form  for highclass
 
  let btncallpopup = document.getElementById('booknowhighclass');
  btncallpopup.addEventListener('click', () =>{
@@ -95,9 +95,36 @@ var btndatetimevalidate = document.getElementById('depaturetimeoption');
  	// display the form and populate it with input fieds
  	popupform.style.display = "block";
  	hidemainform.style.display = "none";
-     popupform.innerHTML += `
+ 	createticketform();
+ 	//document.documentElement.scrollTop = 0;
+ 	//window.scrollTo({top: 0, behavior: 'smooth'});
+ 	scrollToTop();
+   
+ })
+
+
+ // popup booking form for economy
+  let btncallpopup2 = document.getElementById('booknoweconomy');
+ btncallpopup2.addEventListener('click', () =>{
+ 	let popupform = document.querySelector('.popupbookingform');
+ 	let hidemainform = document.querySelector('.main-context');
+ 	// display the form and populate it with input fieds
+ 	popupform.style.display = "block";
+ 	hidemainform.style.display = "none";
+ 	createticketform();
+ 	document.querySelector('.ticketlabel').innerHTML = "Economy Ticket";
+ 	//document.documentElement.scrollTop = 0;
+ 	//window.scrollTo({top: 0, behavior: 'smooth'});
+ 	scrollToTop();
+   
+ })
+
+ function createticketform() {
+ 	// body...
+ 	let popupform = document.querySelector('.popupbookingform');
+ 	popupform.innerHTML += `
      	<center>
-     	<h2 style="color:crimson;"> High-class Ticket</h2>
+     	<h2 style="color:crimson;" class="ticketlabel"> High-class Ticket</h2>
 	<!-- <form> -->
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>From :</label>
 		<select id="depatureoption">
@@ -154,5 +181,13 @@ var btndatetimevalidate = document.getElementById('depaturetimeoption');
 </center>
 
      `
- })
- 
+
+ }
+ // for slow motion scroll top 
+ const scrollToTop = () => {
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  if (c > 0) {
+    window.requestAnimationFrame(scrollToTop);
+    window.scrollTo(0, c - c / 30);
+  }
+};
