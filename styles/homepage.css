@@ -104,3 +104,14 @@
 	padding: 12px 8px;
 	border-radius: 5px;
 }
+#btnpopuphomebooknow{
+	width: 80%;
+	padding: 12px 8px;
+	background:dodgerblue;
+	font-size: 20px;
+	border-radius: 5px;
+}
+#btnpopuphomebooknow:hover{
+	cursor: pointer;
+	border-color: crimson;
+}

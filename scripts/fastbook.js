@@ -86,6 +86,19 @@ var btndatetimevalidate = document.getElementById('depaturetimeoption');
 } )
 
 
+ // validate popup form 
+
+ let btnpopupvalidatetermiai = document.getElementById('btnpopuphomebooknow');
+ if(btnpopupvalidatetermiai == null){
+
+
+ }else {
+ btnpopupvalidatetermiai.addEventListener('click' , () =>{
+	// body...
+	alert("helloe");	
+})
+}
+
  // popup booking form  for highclass
 
  let btncallpopup = document.getElementById('booknowhighclass');
@@ -175,7 +188,7 @@ var btndatetimevalidate = document.getElementById('depaturetimeoption');
 			<option>High-class</option>
 			
 		</select><br><br>
-		<button id="btnhomebooknow">Book Now</button>
+		<button id="btnpopuphomebooknow" onclick="alert("helloe");">Book Now</button>
 	<!-- </form> -->
 
 </center>
