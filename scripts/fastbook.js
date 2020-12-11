@@ -188,7 +188,7 @@ var btndatetimevalidate = document.getElementById('depaturetimeoption');
 			<option>High-class</option>
 			
 		</select><br><br>
-		<button id="btnpopuphomebooknow" onclick="alert("helloe");">Book Now</button>
+		<button id="btnpopuphomebooknow">Book Now</button>
 	<!-- </form> -->
 
 </center>
