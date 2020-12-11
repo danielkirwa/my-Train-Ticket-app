@@ -104,7 +104,7 @@ var btndatetimevalidate = document.getElementById('depaturetimeoption');
  let btncallpopup = document.getElementById('booknowhighclass');
  btncallpopup.addEventListener('click', () =>{
  	// display the form and populate it with input fieds
- 	document.querySelector('.formcaption').innerHTML = "High Class Ticket";
+ 	//document.querySelector('.formcaption').innerHTML = "High Class Ticket";
  	document.querySelector('.ticketcategory').selectedIndex = "1";
  	//document.documentElement.scrollTop = 0;
  	//window.scrollTo({top: 0, behavior: 'smooth'});
@@ -117,7 +117,7 @@ var btndatetimevalidate = document.getElementById('depaturetimeoption');
   let btncallpopup2 = document.getElementById('booknoweconomy');
  btncallpopup2.addEventListener('click', () =>{
  	// display the form and populate it with input fieds
- 	document.querySelector('.formcaption').innerHTML = "Economy Ticket";
+ 	//document.querySelector('.formcaption').innerHTML = "Economy Ticket";
  	document.querySelector('.ticketcategory').selectedIndex = "0";
  	//document.documentElement.scrollTop = 0;
  	//window.scrollTo({top: 0, behavior: 'smooth'});
@@ -133,3 +133,27 @@ var btndatetimevalidate = document.getElementById('depaturetimeoption');
     window.scrollTo(0, c - c / 30);
   }
 };
+
+// animating typing effect
+
+const texts = ['Depature','Ticket'];
+let count = 0;
+let index = 0;
+let currentText = '';
+let letter = '';
+(function typing() {
+	// body...
+	if(count === texts.length){
+		count = 0;
+	}
+	currentText = texts[count];
+	letter = currentText.slice(0, ++index);
+	document.querySelector('.formcaption').textContent = letter;
+	if(letter.length === currentText.length){
+		count++;
+		index = 0;
+	}
+	setTimeout(typing , 400);
+
+}());
+

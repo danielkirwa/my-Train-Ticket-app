@@ -115,3 +115,22 @@
 	cursor: pointer;
 	border-color: crimson;
 }
+/* typing text */
+
+
+.formcaption::after{
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 30px;
+	border-right: 3px solid dodgerblue;
+	animation: blink 0.5s infinite ease;
+}
+@keyframes blink{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
