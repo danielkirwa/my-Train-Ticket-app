@@ -13,6 +13,7 @@ var departurearraylist = [
  var value = document.getElementById('searchinput').value;
  console.log(value);
  	var data = searchnow(value , departurearraylist);
+ 	var table = document.getElementById('departurelist').innerHTML= "";
  terminallist(data);
 
  })
