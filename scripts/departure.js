@@ -2,7 +2,16 @@ var departurearraylist = [
 	{'Name' : 'spark train','Time' : '1700hrs', 'terminal':'terminal 1'},
 	{'Name' : 'bullet train','Time' : '1800hrs', 'terminal':'terminal 2'},
 	{'Name' : 'king train','Time' : '1900hrs', 'terminal':'terminal 1'},
-	{'Name' : 'spring train','Time' : '1700hrs', 'terminal':'terminal 2'}
+	{'Name' : 'spring train','Time' : '1700hrs', 'terminal':'terminal 2'},
+	{'Name' : 'cue train','Time' : '1700hrs', 'terminal':'terminal 1'},
+	{'Name' : 'bull train','Time' : '1800hrs', 'terminal':'terminal 2'},
+	{'Name' : 'spinner train','Time' : '1900hrs', 'terminal':'terminal 1'},
+	{'Name' : 'wave train','Time' : '1700hrs', 'terminal':'terminal 2'},
+	{'Name' : 'Knight train','Time' : '1700hrs', 'terminal':'terminal 1'},
+	{'Name' : 'mini train','Time' : '1800hrs', 'terminal':'terminal 2'},
+	{'Name' : 'zue train','Time' : '1900hrs', 'terminal':'terminal 1'},
+	{'Name' : 'wauq train','Time' : '1700hrs', 'terminal':'terminal 2'}
+
 ]
 
 
