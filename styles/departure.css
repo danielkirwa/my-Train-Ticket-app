@@ -1,3 +1,10 @@
+
+#searchinput{
+	width: 90%;
+	padding: 12px 8px;
+	border: 2px solid dodgerblue;
+	border-radius: 10px;
+}
 .ourterminal{
 	width: 90%;
 	display: flex;
@@ -78,12 +85,10 @@ tbody tr:hover{
 }
 .ourmainterminal{
 	width: 100%;
-	background: blue;
 	margin-left: 5%;
 }
 .oursubterminal{
 	width: 100%;
-	background: teal;
 	margin-left: 5%;
 	
 }
