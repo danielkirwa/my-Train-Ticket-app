@@ -1,0 +1,90 @@
+.ourterminal{
+	width: 90%;
+	display: flex;
+	padding:1%;
+}
+.ourmainterminal{
+	width: 40%;
+	margin-left: 5%;
+	padding: 1%;
+}
+.oursubterminal{
+	width: 40%;
+	margin-left: 5%;
+	padding: 1%;
+	
+}
+
+/* styling terminal tables*/
+table{
+	width: 100%;
+}
+
+.departuretable{
+	overflow-x: auto;
+}
+thead td{
+	background: dodgerblue;
+	padding: 12px 8px;
+	font-size: 18px;
+	text-align: center;
+}
+#depature-terminal-head td{
+	background: dodgerblue;
+	padding: 12px 8px;
+	font-size: 18px;
+	text-align: center;
+}
+#main-terminal-head td{
+	background: dodgerblue;
+	padding: 12px 8px;
+	font-size: 18px;
+	text-align: center;
+
+}
+#sub-terminal-head td{
+	background: dodgerblue;
+	padding: 12px 8px;
+	font-size: 18px;
+	text-align: center;
+
+}
+#longcolumn{
+	width: 90%;
+}
+td{
+	text-align: center;
+}
+tbody td{
+	padding: 8px;
+}
+tbody tr:nth-child(even){
+	background: #dcdcdc;
+}
+tbody tr:hover{
+	background: dodgerblue;
+}
+
+
+
+
+
+
+@media(max-width: 800px){
+	.ourterminal{
+	width: 90%;
+	display: block;
+	padding:1%;
+}
+.ourmainterminal{
+	width: 100%;
+	background: blue;
+	margin-left: 5%;
+}
+.oursubterminal{
+	width: 100%;
+	background: teal;
+	margin-left: 5%;
+	
+}
+}

@@ -8,7 +8,7 @@
 	<title></title>
 	<meta name="viewport" content="width=divise-width, initial-scale=1">
 	 <link rel="stylesheet" type="text/css" href="styles/navbar.css">
-	 <link rel="stylesheet" type="text/css" href="styles/homepage.css">
+	 <link rel="stylesheet" type="text/css" href="styles/departure.css">
 
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
@@ -38,21 +38,60 @@
 </header>
 </div>
 <!-- end of navigation bar -->
+<div class="ourterminal">
+
+	<div class="ourmainterminal">
+		<h3>Our main Terminal</h3>
+		<table>
+			<tr style="width: 100%">
+				<thead  id="main-terminal-head">
+					<td>Code</td>
+					<td id="longcolumn">Terminal Name</td>
+				</thead>
+			</tr>
+			<tbody id="main-terminal">
+	
+			</tbody>
+		</table>
+	</div>
+	<br>
+		<div class="oursubterminal">
+			<h3>Our Sub-Terminal</h3>
+		<table>
+			<tr style="width: 100%">
+				<thead  id="sub-terminal-head">
+					<td>Code</td>
+					<td id="longcolumn">Terminal Name</td>
+				</thead>
+			</tr>
+			<tbody id="sub-terminal">
+			
+			</tbody>
+		</table>
+	</div>
+	
+</div>
 <div>
 	<input type="tetx" name="" id="searchinput">
 </div>
 
 <div class="departuretable">
+	<center>
 	<table>
 		<tr>
-			<td>head 1</td>
-			<td>head 2</td>
-			<td>head 3</td>
+			<thead  id="depature-terminal-head">
+			<td>TrainName</td>
+			<td>DepartureTerminal</td>
+			<td>DestinationTerminal</td>
+			<td> Time</td>
+			<td>Date</td>
+		</thead>
 		</tr>
 		<tbody id="departurelist">
 			
 		</tbody>
 	</table>
+	</center>
 </div>
 
 

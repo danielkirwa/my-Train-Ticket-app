@@ -1,17 +1,31 @@
 var departurearraylist = [
-	{'Name' : 'spark train','Time' : '1700hrs', 'terminal':'terminal 1'},
-	{'Name' : 'bullet train','Time' : '1800hrs', 'terminal':'terminal 2'},
-	{'Name' : 'king train','Time' : '1900hrs', 'terminal':'terminal 1'},
-	{'Name' : 'spring train','Time' : '1700hrs', 'terminal':'terminal 2'},
-	{'Name' : 'cue train','Time' : '1700hrs', 'terminal':'terminal 1'},
-	{'Name' : 'bull train','Time' : '1800hrs', 'terminal':'terminal 2'},
-	{'Name' : 'spinner train','Time' : '1900hrs', 'terminal':'terminal 1'},
-	{'Name' : 'wave train','Time' : '1700hrs', 'terminal':'terminal 2'},
-	{'Name' : 'Knight train','Time' : '1700hrs', 'terminal':'terminal 1'},
-	{'Name' : 'mini train','Time' : '1800hrs', 'terminal':'terminal 2'},
-	{'Name' : 'zue train','Time' : '1900hrs', 'terminal':'terminal 1'},
-	{'Name' : 'wauq train','Time' : '1700hrs', 'terminal':'terminal 2'}
+	{'Name' : 'spark train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':'20-12-2020'},
+	{'Name' : 'bullet train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1800hrs', 'Date':'20-12-2020'},
+	{'Name' : 'king train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1900hrs', 'Date':'20-12-2020'},
+	{'Name' : 'spring train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':'20-12-2020'},
+	{'Name' : 'cue train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':'20-12-2020'},
+	{'Name' : 'bull train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1800hrs', 'Date':'20-12-2020'},
+	{'Name' : 'spinner train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1900hrs', 'Date':'20-12-2020'},
+	{'Name' : 'wave train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':'20-12-2020'},
+	{'Name' : 'Knight train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':'20-12-2020'},
+	{'Name' : 'mini train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1800hrs', 'Date':'20-12-2020'},
+	{'Name' : 'zue train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1900hrs', 'Date':'20-12-2020'},
+	{'Name' : 'wauq train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':'20-12-2020'}
 
+]
+
+
+var mainterminallist = [
+	{'Code' : '001', 'Terminal' : 'Nairobi'},
+	{'Code' : '002', 'Terminal' : 'Mombasa'},
+	{'Code' : '003', 'Terminal' : 'Kisumu'}
+]
+
+var subterminallist = [
+	{'Code' : '101', 'Terminal' : 'Nakuru'},
+	{'Code' : '102', 'Terminal' : 'Eldoret'},
+	{'Code' : '103', 'Terminal' : 'Simba'},
+	{'Code' : '103', 'Terminal' : 'Voi'}
 ]
 
 
@@ -26,6 +40,9 @@ var departurearraylist = [
  terminallist(data);
 
  })
+ // calling display of terminals list
+ subterminals(subterminallist);
+  mainterminals(mainterminallist);
  terminallist(departurearraylist);
 
  function searchnow(value, data) {
@@ -55,8 +72,42 @@ function terminallist(data) {
 		var row = `
 				<tr>
 			<td>${data[i].Name}</td>
+			<td>${data[i].Departure}</td>
+			<td>${data[i].Destination}</td>
 			<td>${data[i].Time}</td>
-			<td>${data[i].terminal}</td>
+			<td>${data[i].Date}</td>
+		    </tr>
+		`
+		table.innerHTML += row;
+	}
+}
+
+// main terminal 
+function mainterminals(data) {
+	// body...
+	var table = document.getElementById('main-terminal');
+
+	for (var i = 0 ; i < data.length ; i ++) {
+		var row = `
+				<tr>
+			<td>${data[i].Code}</td>
+			<td>${data[i].Terminal}</td>
+		    </tr>
+		`
+		table.innerHTML += row;
+	}
+}
+// sub terminal 
+
+function subterminals(data) {
+	// body...
+	var table = document.getElementById('sub-terminal');
+
+	for (var i = 0 ; i < data.length ; i ++) {
+		var row = `
+				<tr>
+			<td>${data[i].Code}</td>
+			<td>${data[i].Terminal}</td>
 		    </tr>
 		`
 		table.innerHTML += row;
