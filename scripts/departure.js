@@ -1,16 +1,16 @@
 var departurearraylist = [
 	{'Name' : 'Spark train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':'20-12-2020'},
-	{'Name' : 'bullet train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1800hrs', 'Date':'20-12-2020'},
-	{'Name' : 'king train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1900hrs', 'Date':'20-12-2020'},
+	{'Name' : 'Bullet train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1800hrs', 'Date':'20-12-2020'},
+	{'Name' : 'King train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1900hrs', 'Date':'20-12-2020'},
 	{'Name' : 'Spring train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':'20-12-2020'},
-	{'Name' : 'cue train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':'20-12-2020'},
-	{'Name' : 'bull train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1800hrs', 'Date':'20-12-2020'},
+	{'Name' : 'Cue train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':'20-12-2020'},
+	{'Name' : 'Bull train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1800hrs', 'Date':'20-12-2020'},
 	{'Name' : 'Spinner train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1900hrs', 'Date':'20-12-2020'},
-	{'Name' : 'wave train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':'20-12-2020'},
+	{'Name' : 'Wave train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':'20-12-2020'},
 	{'Name' : 'Knight train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':'20-12-2020'},
-	{'Name' : 'mini train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1800hrs', 'Date':'20-12-2020'},
-	{'Name' : 'zue train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1900hrs', 'Date':'20-12-2020'},
-	{'Name' : 'wauq train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':'20-12-2020'}
+	{'Name' : 'Mini train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1800hrs', 'Date':'20-12-2020'},
+	{'Name' : 'Zue train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1900hrs', 'Date':'20-12-2020'},
+	{'Name' : 'Wauq train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':'20-12-2020'}
 
 ]
 

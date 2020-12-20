@@ -69,7 +69,8 @@ tbody tr:nth-child(even){
 	background: #dcdcdc;
 }
 tbody tr:hover{
-	background: dodgerblue;
+	background: crimson;
+	color: white;
 }
 
 
