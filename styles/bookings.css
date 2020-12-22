@@ -9,6 +9,7 @@
 	height: 150px;
 	position: absolute;
 	width: 150px;
+	left: 100px;
 }
 .holder:before{
 	background: #ffe897; 
@@ -22,7 +23,7 @@
 	background: -moz-radial-gradient(bottom right, #ffe897 , #f98a05);
 	background: radial-gradient(to top left, #ffe897, #f98a05);
 	background: -webkit-radial-gradient(bottom right , #ffe897, #f98a05 );
-	right: 0;
+	right: 50;
 	top: 0;
 	z-index: -1;
 }
@@ -67,4 +68,19 @@
 		transform: rotate(360deg) translateX(100px) rotate(-360deg);
 		
 	}
+}
+
+.btncancelbook{
+	width: 90%;
+	height: 40px;
+	font-size: 2rem;
+	color: crimson;
+	background: #00000000;
+	border-radius: 10px;
+	border: 2px solid crimson;
+	transition: 1s ease;
+}
+.btncancelbook:hover{
+	cursor: pointer;
+	background: dodgerblue;
 }
