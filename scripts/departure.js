@@ -16,6 +16,10 @@ var departurearraylist = [
 	{'Name' : 'Knight train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1500hrs', 'Date':today},
 	{'Name' : 'Mini train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':today},
 	{'Name' : 'Zue train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1800hrs', 'Date':today},
+	{'Name' : 'Wzauq train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1900hrs', 'Date':today},
+	{'Name' : 'Knight train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1500hrs', 'Date':today},
+	{'Name' : 'Mini train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':today},
+	{'Name' : 'Zue train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1800hrs', 'Date':today},
 	{'Name' : 'Wzauq train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1900hrs', 'Date':today}
 
 ]
