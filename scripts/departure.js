@@ -28,14 +28,17 @@ var departurearraylist = [
 var mainterminallist = [
 	{'Code' : '001', 'Terminal' : 'Nairobi'},
 	{'Code' : '002', 'Terminal' : 'Mombasa'},
-	{'Code' : '003', 'Terminal' : 'Kisumu'}
+	{'Code' : '003', 'Terminal' : 'Kisumu'},
+	{'Code' : '101', 'Terminal' : 'Nakuru'}
 ]
 
 var subterminallist = [
-	{'Code' : '101', 'Terminal' : 'Nakuru'},
+	{'Code' : '101', 'Terminal' : 'Naivasha'},
 	{'Code' : '102', 'Terminal' : 'Eldoret'},
 	{'Code' : '103', 'Terminal' : 'Simba'},
-	{'Code' : '103', 'Terminal' : 'Voi'}
+	{'Code' : '103', 'Terminal' : 'Voi'},
+	{'Code' : '103', 'Terminal' : 'Molo'},
+	{'Code' : '103', 'Terminal' : 'Kericho'}
 ]
 
 
@@ -145,6 +148,5 @@ var myrows  = document.getElementById('dep');
    	datadisplay.innerHTML = datadisplay.innerHTML + '<br>';
 
    }
-   }
+   } 
 
- 
