@@ -29,7 +29,7 @@ var mainterminallist = [
 	{'Code' : '001', 'Terminal' : 'Nairobi'},
 	{'Code' : '002', 'Terminal' : 'Mombasa'},
 	{'Code' : '003', 'Terminal' : 'Kisumu'},
-	{'Code' : '101', 'Terminal' : 'Nakuru'}
+	{'Code' : '004', 'Terminal' : 'Nakuru'}
 ]
 
 var subterminallist = [
