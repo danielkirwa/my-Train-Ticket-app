@@ -1,4 +1,35 @@
+  // all global variable shere 
 
+  var userdepeturetermineivalue,userdestinstiontermineivalue,userdepaturedatevalue,
+  userdepaturetimevalue,userticketcategoryvalue;
+
+  // end of global variables
+
+
+
+  function readyBookingDetails() {
+  	// body...
+  	let userdepetureterminei = document.getElementById('depatureoption');
+  		userdepeturetermineivalue =  userdepetureterminei.options[userdepetureterminei.selectedIndex].value;
+  	let userdestinstionterminei = document.getElementById('destinstionoption');
+  		userdestinstiontermineivalue = userdestinstionterminei.options[userdestinstionterminei.selectedIndex].value;
+  	let userdepaturedate = document.getElementById('depaturedate');
+  		userdepaturedatevalue = userdepaturedate.value;
+  	let userdepaturetime = document.getElementById('depaturetimeoption');
+  		userdepaturetimevalue = userdepaturetime.options[userdepaturetime.selectedIndex].value;
+  	let userticketcategory = document.querySelector('.ticketcategory');
+  		userticketcategoryvalue = userticketcategory.options[userticketcategory.selectedIndex].value;
+
+  		console.log('Depature :  ' + userdepeturetermineivalue);
+  		console.log('Destination :  ' + userdestinstiontermineivalue);
+  		console.log('date :  ' + userdepaturedatevalue);
+  		console.log('time :  ' + userdepaturetimevalue);
+  		console.log('category :  ' + userticketcategoryvalue);
+
+  }
+
+
+ 
  let btnvalidatetermiai = document.getElementById('btnhomebooknow');
  btnvalidatetermiai.addEventListener('click' , () =>{
 	// body...
@@ -65,6 +96,7 @@
 		depaturetimeoption.style.border = "2px solid green";
 		alert("Good to take  off");
 		// book id validated
+		readyBookingDetails();
 	 }
 
 	}else if(period <= -1){
@@ -76,6 +108,7 @@
 		depaturedate.style.border = "2px solid green";
 		alert("Good to take  off");
 		 // book id validated
+		 readyBookingDetails();
 	}
 	}
 
