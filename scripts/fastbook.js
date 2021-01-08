@@ -20,11 +20,11 @@
   	let userticketcategory = document.querySelector('.ticketcategory');
   		userticketcategoryvalue = userticketcategory.options[userticketcategory.selectedIndex].value;
 
-  		console.log('Depature :  ' + userdepeturetermineivalue);
+  		/*console.log('Depature :  ' + userdepeturetermineivalue);
   		console.log('Destination :  ' + userdestinstiontermineivalue);
   		console.log('date :  ' + userdepaturedatevalue);
   		console.log('time :  ' + userdepaturetimevalue);
-  		console.log('category :  ' + userticketcategoryvalue);
+  		console.log('category :  ' + userticketcategoryvalue);*/
 
   }
 
@@ -92,23 +92,36 @@
 	 	//alert(" train has departed");
 	 	depaturetimeoption.style.border = "2px solid red";
 	 }else if(depaturetimecode > hournow){
+	 	readyBookingDetails();
 	 	alert(" Catch the train before : " + depaturetimecode + "  " + "Hours" );
 		depaturetimeoption.style.border = "2px solid green";
 		alert("Good to take  off");
-		// book id validated
-		readyBookingDetails();
+		// book details validated
+
+		 localStorage.setItem('Depatureterminal', userdepeturetermineivalue);
+		 localStorage.setItem('Destinationterminal', userdestinstiontermineivalue);
+		 localStorage.setItem('Depaturedate', userdepaturedatevalue);
+		 localStorage.setItem('Depaturetime', userdepaturetimevalue);
+		 localStorage.setItem('Depaturecategory', userticketcategoryvalue);
+		
 	 }
 
 	}else if(period <= -1){
 		//alert("Date has already passed");
 		depaturedate.style.border = "2px solid red";
 	}else if(period >= 1){
+		 readyBookingDetails();
 		alert(" Catch the train before : " + depaturetimecode + "  " + "Hours" );
 		depaturetimeoption.style.border = "2px solid green";
 		depaturedate.style.border = "2px solid green";
 		alert("Good to take  off");
-		 // book id validated
-		 readyBookingDetails();
+		 // book details validated
+		
+		 localStorage.setItem('Depatureterminal', userdepeturetermineivalue);
+		 localStorage.setItem('Destinationterminal', userdestinstiontermineivalue);
+		 localStorage.setItem('Depaturedate', userdepaturedatevalue);
+		 localStorage.setItem('Depaturetime', userdepaturetimevalue);
+		 localStorage.setItem('Depaturecategory', userticketcategoryvalue);
 	}
 	}
 

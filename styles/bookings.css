@@ -6,7 +6,7 @@
 	border: 1px solid #fff;
 	border-radius: 15px;
 	box-shadow: 0 0 1rem 0 rgba(0 ,0,0,0.2); 
-	font-size: 2rem;
+	font-size: 1.5rem;
 	overflow: hidden;
 	position: relative;
 	width: 800px;
@@ -28,7 +28,7 @@
 
 }
 .card svg{
-	bottom: 50%;
+	bottom: 40%;
 	position: absolute;
 	left: 80%;
 	
