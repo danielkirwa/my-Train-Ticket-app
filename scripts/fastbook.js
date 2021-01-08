@@ -10,27 +10,73 @@
 	var destinstiontermineicode =  destinstionterminei.value;
 
 	if(depeturetermineicode == 0 && destinstiontermineicode == 0){
-		alert("Kindly select  Terminai")
+		//alert("Kindly select  Terminai")
 		depetureterminei.style.border = "2px solid red";
 		destinstionterminei.style.border = "2px solid red";
 	}else if (depeturetermineicode == 0) {
-		alert("Kindly select Take off Terminai");
+		//alert("Kindly select Take off Terminai");
 		depetureterminei.style.border = "2px solid red";
 		destinstionterminei.style.border = "2px solid green";
 	}else if( destinstiontermineicode == 0){
-		alert("Kindly select destination Terminai");
+		//alert("Kindly select destination Terminai");
 		depetureterminei.style.border = "2px solid green";
 		destinstionterminei.style.border = "2px solid red";
 	}else if(depeturetermineicode == destinstiontermineicode){
-		alert("Destination and Take off are same");
+		//alert("Destination and Take off are same");
 		depetureterminei.style.border = "2px solid red";
 		destinstionterminei.style.border = "2px solid red";
 	}else{
 
 
-		alert("Good to take  off");
+		
 		depetureterminei.style.border = "2px solid green";
 		destinstionterminei.style.border = "2px solid green";
+
+			// first validate date to make sure it is ahead
+
+	let depaturedate = document.getElementById('depaturedate');
+	var userselecteddate = depaturedate.value; 
+	var selecteddatetime = new Date(userselecteddate);
+	var userselecteddatetime = selecteddatetime.getTime();
+	var realdate = new Date();
+	var todaydate = realdate.getTime();
+		todaydate = parseInt(todaydate);
+
+	  var  period = Math.floor((userselecteddatetime - todaydate)/(1000 * 60 * 60 * 24)+1);
+
+	
+	// get user selected hour of travell
+	let depaturetime = document.getElementById('depaturetimeoption');
+	var depaturetimecode = depaturetime.value;
+
+	// get real actual time
+	var datetoday = new Date();
+	var hournow = datetoday.getHours();
+	 if(period == 0){
+	 	depaturedate.style.border = "2px solid green";
+	 if (depaturetimecode == hournow) {
+	 	//alert("Current train has departed");
+	 	depaturetimeoption.style.border = "2px solid red";
+	 }else if(depaturetimecode < hournow){
+	 	//alert(" train has departed");
+	 	depaturetimeoption.style.border = "2px solid red";
+	 }else if(depaturetimecode > hournow){
+	 	alert(" Catch the train before : " + depaturetimecode + "  " + "Hours" );
+		depaturetimeoption.style.border = "2px solid green";
+		alert("Good to take  off");
+		// book id validated
+	 }
+
+	}else if(period <= -1){
+		//alert("Date has already passed");
+		depaturedate.style.border = "2px solid red";
+	}else if(period >= 1){
+		alert(" Catch the train before : " + depaturetimecode + "  " + "Hours" );
+		depaturetimeoption.style.border = "2px solid green";
+		depaturedate.style.border = "2px solid green";
+		alert("Good to take  off");
+		 // book id validated
+	}
 	}
 
 
@@ -65,10 +111,10 @@ var btndatetimevalidate = document.getElementById('depaturetimeoption');
 	 if(period == 0){
 	 	depaturedate.style.border = "2px solid green";
 	 if (depaturetimecode == hournow) {
-	 	alert("Current train has departed");
+	 	//alert("Current train has departed");
 	 	depaturetimeoption.style.border = "2px solid red";
 	 }else if(depaturetimecode < hournow){
-	 	alert(" train has departed");
+	 	//alert(" train has departed");
 	 	depaturetimeoption.style.border = "2px solid red";
 	 }else if(depaturetimecode > hournow){
 	 	alert(" Catch the train before : " + depaturetimecode + "  " + "Hours" );
@@ -76,7 +122,7 @@ var btndatetimevalidate = document.getElementById('depaturetimeoption');
 	 }
 
 	}else if(period <= -1){
-		alert("Date has already passed");
+		//alert("Date has already passed");
 		depaturedate.style.border = "2px solid red";
 	}else if(period >= 1){
 		alert(" Catch the train before : " + depaturetimecode + "  " + "Hours" );
