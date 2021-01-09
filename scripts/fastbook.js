@@ -2,6 +2,7 @@
 
   var userdepeturetermineivalue,userdestinstiontermineivalue,userdepaturedatevalue,
   userdepaturetimevalue,userticketcategoryvalue;
+  var ticketcount = 1;
 
   // end of global variables
 
@@ -101,17 +102,19 @@
 		 let tickettag = userdepeturetermineivalue+userdestinstiontermineivalue;
 
 		 let ticketdetails = [{
-		 	TicketNo : tickettag,
+		 	TicketTag : tickettag,
 		 	TicketDepature : userdepeturetermineivalue,
 		 	TicketDestination : userdestinstiontermineivalue,
 		 	TicketDate : userdepaturedatevalue,
 		 	TicketTime : userdepaturetimevalue,
-		 	TicketCategory : userticketcategoryvalue
+		 	TicketCategory : userticketcategoryvalue,
+		 	TicketCount : ticketcount
 		 }]
 
 		 localStorage.setItem("myTicket", JSON.stringify(ticketdetails));
 
-
+		 console.log(ticketdetails);
+		 numberOfTicket();
 
 		 /*localStorage.setItem('Depatureterminal', userdepeturetermineivalue);
 		 localStorage.setItem('Destinationterminal', userdestinstiontermineivalue);
@@ -135,17 +138,19 @@
 		 let tickettag = userdepeturetermineivalue+userdestinstiontermineivalue;
 
 		 let ticketdetails = [{
-		 	TicketNo : tickettag,
+		 	TicketTag : tickettag,
 		 	TicketDepature : userdepeturetermineivalue,
 		 	TicketDestination : userdestinstiontermineivalue,
 		 	TicketDate : userdepaturedatevalue,
 		 	TicketTime : userdepaturetimevalue,
-		 	TicketCategory : userticketcategoryvalue
+		 	TicketCategory : userticketcategoryvalue,
+		 	TicketCount : ticketcount
 		 }]
 
 		 localStorage.setItem("myTicket", JSON.stringify(ticketdetails));
 
-
+		 console.log(ticketdetails);
+		 numberOfTicket();
 		
 		 /*localStorage.setItem('Depatureterminal', userdepeturetermineivalue);
 		 localStorage.setItem('Destinationterminal', userdestinstiontermineivalue);
@@ -158,6 +163,28 @@
 
 	
 })
+
+   function numberOfTicket() {
+   	// body...
+   	let numberOfTicket = localStorage.getItem('NumberOfTickets');
+   	numberOfTicket = parseInt(numberOfTicket);
+   	if(numberOfTicket){
+   		localStorage.setItem('NumberOfTickets' , numberOfTicket + 1 );
+   		document.querySelector('.mytickes').textContent = numberOfTicket + 1 ;
+
+   	}
+   	else{
+   		localStorage.setItem('NumberOfTickets' ,  1 );
+   		document.querySelector('.mytickes').textContent = 1 ;
+   	}
+   }
+
+    // increatement or insert new ticket
+
+    function addTicket() {
+    	// body...
+    	
+    }
 
 
 // validate time and date 

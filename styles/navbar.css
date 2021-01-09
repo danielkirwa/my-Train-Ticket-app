@@ -43,6 +43,12 @@ section{
 	
 }
 
+.mytickes{
+	background: white;
+	color: red;
+	padding: 3px;
+}
+
 
 @media(max-width: 800px){
 	.navbarholder{
