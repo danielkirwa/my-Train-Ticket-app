@@ -177,13 +177,32 @@
    		localStorage.setItem('NumberOfTickets' ,  1 );
    		document.querySelector('.mytickes').textContent = 1 ;
    	}
+   	addTicket();
    }
 
     // increatement or insert new ticket
 
     function addTicket() {
     	// body...
-    	
+    	let ticketbooked = localStorage.getItem('myTicket');
+    	ticketbooked = JSON.parse(ticketbooked);
+    	if( ticketbooked != null){
+    		if(ticketbooked[myTicket.TicketTag] == undefined){
+    			ticketbooked = {
+    				...ticketbooked,
+    				[myTicket.TicketTag]: myTicket
+    			}
+    		}
+    		ticketbooked[myTicket.TicketTag]. ticketcount += 1;
+
+    	}else{
+    		myTicket.ticketcount = 1;
+    		ticketbooked = {
+    			[myTicket.TicketTag]:myTicket
+    		}
+    	}
+
+    	localStorage.setItem('myTicket' ,JSON.stringify(ticketbooked));
     }
 
 
