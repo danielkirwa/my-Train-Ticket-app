@@ -96,13 +96,28 @@
 	 	alert(" Catch the train before : " + depaturetimecode + "  " + "Hours" );
 		depaturetimeoption.style.border = "2px solid green";
 		alert("Good to take  off");
-		// book details validated
+		// book details validated combine ticket 
 
-		 localStorage.setItem('Depatureterminal', userdepeturetermineivalue);
+		 let tickettag = userdepeturetermineivalue+userdestinstiontermineivalue;
+
+		 let ticketdetails = [{
+		 	TicketNo : tickettag,
+		 	TicketDepature : userdepeturetermineivalue,
+		 	TicketDestination : userdestinstiontermineivalue,
+		 	TicketDate : userdepaturedatevalue,
+		 	TicketTime : userdepaturetimevalue,
+		 	TicketCategory : userticketcategoryvalue
+		 }]
+
+		 localStorage.setItem("myTicket", JSON.stringify(ticketdetails));
+
+
+
+		 /*localStorage.setItem('Depatureterminal', userdepeturetermineivalue);
 		 localStorage.setItem('Destinationterminal', userdestinstiontermineivalue);
 		 localStorage.setItem('Depaturedate', userdepaturedatevalue);
 		 localStorage.setItem('Depaturetime', userdepaturetimevalue);
-		 localStorage.setItem('Depaturecategory', userticketcategoryvalue);
+		 localStorage.setItem('Depaturecategory', userticketcategoryvalue);*/
 		
 	 }
 
@@ -115,13 +130,28 @@
 		depaturetimeoption.style.border = "2px solid green";
 		depaturedate.style.border = "2px solid green";
 		alert("Good to take  off");
-		 // book details validated
+		 // book details validated combine ticket 
+
+		 let tickettag = userdepeturetermineivalue+userdestinstiontermineivalue;
+
+		 let ticketdetails = [{
+		 	TicketNo : tickettag,
+		 	TicketDepature : userdepeturetermineivalue,
+		 	TicketDestination : userdestinstiontermineivalue,
+		 	TicketDate : userdepaturedatevalue,
+		 	TicketTime : userdepaturetimevalue,
+		 	TicketCategory : userticketcategoryvalue
+		 }]
+
+		 localStorage.setItem("myTicket", JSON.stringify(ticketdetails));
+
+
 		
-		 localStorage.setItem('Depatureterminal', userdepeturetermineivalue);
+		 /*localStorage.setItem('Depatureterminal', userdepeturetermineivalue);
 		 localStorage.setItem('Destinationterminal', userdestinstiontermineivalue);
 		 localStorage.setItem('Depaturedate', userdepaturedatevalue);
 		 localStorage.setItem('Depaturetime', userdepaturetimevalue);
-		 localStorage.setItem('Depaturecategory', userticketcategoryvalue);
+		 localStorage.setItem('Depaturecategory', userticketcategoryvalue);*/
 	}
 	}
 
