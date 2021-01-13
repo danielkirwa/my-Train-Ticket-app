@@ -26,24 +26,38 @@
 
  function populateticket() {
  	// body...
- 		let depature =  localStorage.getItem('Depatureterminal');
-		let detination =  localStorage.getItem('Destinationterminal');
-		let date =  localStorage.getItem('Depaturedate');
-		let time =  localStorage.getItem('Depaturetime');
-		let category =  localStorage.getItem('Depaturecategory');
+ 		let ticketDetails = localStorage.getItem('myTicket');
+ 		 ticketDetails = JSON.parse(ticketDetails);
+ 		 let ticketHolder = document.querySelector('.holder');
 
-		 console.log(depature+detination+date+category+time)
+ 		 if(ticketDetails){
+ 		 	console.log('available')
+ 		 	Object.values(ticketDetails).map(details =>{
+ 		 		ticketHolder.innerHTML += `
+ 		 		<div class="card">
+		<div class="card-text">
 
-		 let depatureholder = document.getElementById('carddepature');
-		 let destinationholder = document.getElementById('carddestination');
-		 let dateholder = document.getElementById('carddate');
-		 let timeholder = document.getElementById('cardtime');
-		 let categoryholder = document.getElementById('cardcartegory');
-		 depatureholder.innerHTML = "Depatureterminal : "  + depature;
-		 destinationholder.innerHTML = "Destinationterminal : "  + detination;
-		 dateholder.innerHTML = "Date : "  + date;
-		 timeholder.innerHTML =  "Time : "  +time;
-		 categoryholder.innerHTML = "Categoty : "  + category;
+			Travel in Style
+			<br>
+			<small>Name : #name #name</small><br>
+			<small id="cardcartegory">Category : ${details.TicketCategory}</small><br>
+			<small id="cardtime">Depature Time  : ${details.TicketTime}</small><br>
+			<small id="carddepature"> Depature Terminal : ${details.TicketDepature}</small><br>
+			<small id="carddestination">Destination Terminal :${details.TicketDestination}</small><br>
+			<small id="carddate"> Depature Date :${details.TicketDate}</small><br>
+			
+			<button class="btncancelbook">Cancel Booking</button>
+		</div>
+		<svg> 
+			<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="#00000000" />
+			<text fill="green" font-size="18" font-family="Verdana" x="12" y="60">active</text>
+		 </svg>
+	</div>
+
+ 		 		`
+ 		 	})
+ 		 }
+
 
  }
  populateticket();
