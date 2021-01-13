@@ -325,3 +325,10 @@ let letter = '';
 
 }());
 
+// show tickets 
+  (function showNoOfTicket() {
+   	// body...
+
+   	let ticketNumber = localStorage.getItem('NumberOfTickets');
+   	document.querySelector('.mytickes').innerHTML = ticketNumber;
+   }());

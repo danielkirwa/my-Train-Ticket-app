@@ -1,3 +1,9 @@
+  
+
+  // show number of tickets 
+
+
+
  let btncancel = document.querySelector('.btncancelbook');
  // loop through cancel button
 
@@ -56,8 +62,19 @@
 
  		 		`
  		 	})
+ 		 }else{
+ 		 	let buttoninfor = document.querySelector('.btncancelbook');
+ 		 	buttoninfor.innerHTML = "No Bookings Yet !!!"
  		 }
 
 
  }
+
+  // show number of tickets
+    (function showNoOfTicket() {
+   	// body...
+
+   	let ticketNumber = localStorage.getItem('NumberOfTickets');
+   	document.querySelector('.mytickes').innerHTML = ticketNumber;
+   }());
  populateticket();

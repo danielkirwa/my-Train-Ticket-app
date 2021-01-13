@@ -150,3 +150,12 @@ var myrows  = document.getElementById('dep');
    }
    } 
 
+   // show number of tickets 
+
+   (function showNoOfTicket() {
+   	// body...
+
+   	let ticketNumber = localStorage.getItem('NumberOfTickets');
+   	document.querySelector('.mytickes').innerHTML = ticketNumber;
+   }())
+
