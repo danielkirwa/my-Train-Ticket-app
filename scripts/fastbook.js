@@ -187,18 +187,20 @@
     	let ticketbooked = localStorage.getItem('myTicket');
     	ticketbooked = JSON.parse(ticketbooked);
     	if( ticketbooked != null){
-    		if(ticketbooked[myTicket.TicketTag] == undefined){
+    		if(ticketbooked[ticketbooked.TicketTag] == undefined){
     			ticketbooked = {
     				...ticketbooked,
-    				[myTicket.TicketTag]: myTicket
+    				[ticketbooked.TicketTag]: ticketbooked
+
     			}
+    			
     		}
-    		ticketbooked[myTicket.TicketTag]. ticketcount += 1;
+    		ticketbooked[ticketbooked.TicketTag]. ticketcount += 1;
 
     	}else{
-    		myTicket.ticketcount = 1;
+    		ticketbooked.ticketcount = 1;
     		ticketbooked = {
-    			[myTicket.TicketTag]:myTicket
+    			[ticketbooked.TicketTag]:ticketbooked
     		}
     	}
 

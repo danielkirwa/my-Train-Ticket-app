@@ -157,5 +157,5 @@ var myrows  = document.getElementById('dep');
 
    	let ticketNumber = localStorage.getItem('NumberOfTickets');
    	document.querySelector('.mytickes').innerHTML = ticketNumber;
-   }())
+   }());
 
