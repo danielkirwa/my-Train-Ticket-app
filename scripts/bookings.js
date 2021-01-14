@@ -1,10 +1,9 @@
-  
 
   // show number of tickets 
 
 
 
- let btncancel = document.querySelector('.btncancelbook');
+ let btncancel = document.querySelector('.btncancelallbook');
  // loop through cancel button
 
  btncancel.addEventListener('click' , () =>{
@@ -42,7 +41,6 @@
  		 		ticketHolder.innerHTML += `
  		 		<div class="card">
 		<div class="card-text">
-
 			Travel in Style
 			<br>
 			<small>Name : #name #name</small><br>
@@ -59,11 +57,10 @@
 			<text fill="green" font-size="18" font-family="Verdana" x="12" y="60">active</text>
 		 </svg>
 	</div>
-
  		 		`
  		 	})
  		 }else{
- 		 	let buttoninfor = document.querySelector('.btncancelbook');
+ 		 	let buttoninfor = document.querySelector('.btncancelallbook');
  		 	buttoninfor.innerHTML = "No Bookings Yet !!!"
  		 }
 

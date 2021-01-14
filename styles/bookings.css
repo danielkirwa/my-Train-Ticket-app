@@ -44,7 +44,22 @@
 	transition: 1s ease;
 	margin-left: 60%;
 }
+.btncancelallbook{
+height: 40px;
+	font-size: 2rem;
+	color: crimson;
+	background: #00000000;
+	border-radius: 10px;
+	border: 2px solid crimson;
+	transition: 1s ease;
+	margin-left: 60%;	
+}
 .btncancelbook:hover{
 	cursor: pointer;
 	background: dodgerblue;
 }
+.btncancelallbook:hover{
+	cursor: pointer;
+	background: dodgerblue;
+
+	}
