@@ -12,7 +12,7 @@
  	if(confirmcancel){
  		document.querySelector('.holder').innerHTML = "";
  	}else{
- 		alert("Opparaion canceled")
+ 		alert("Opparaion canceled");
  	}
 
  		
@@ -57,6 +57,7 @@
 			<text fill="green" font-size="18" font-family="Verdana" x="12" y="60">active</text>
 		 </svg>
 	</div>
+	 <br><br>
  		 		`
  		 	})
  		 }else{

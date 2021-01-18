@@ -5,22 +5,22 @@ let today = date.toISOString().slice(0, 10);
 
 
 var departurearraylist = [
-	{'Name' : 'Spark train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '0400hrs', 'Date':today},
-	{'Name' : 'Bullet train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '0600hrs', 'Date':today},
-	{'Name' : 'King train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '0700hrs', 'Date':today},
-	{'Name' : 'Spring train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '0800hrs', 'Date':today},
-	{'Name' : 'Cue train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1000hrs', 'Date':today},
-	{'Name' : 'Bull train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1100rs', 'Date':today},
-	{'Name' : 'Spinner train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1200hrs', 'Date':today},
-	{'Name' : 'Wave train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1400hrs', 'Date':today},
-	{'Name' : 'Knight train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1500hrs', 'Date':today},
-	{'Name' : 'Mini train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':today},
-	{'Name' : 'Zue train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1800hrs', 'Date':today},
-	{'Name' : 'Wzauq train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1900hrs', 'Date':today},
-	{'Name' : 'Knight train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1500hrs', 'Date':today},
-	{'Name' : 'Mini train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1700hrs', 'Date':today},
-	{'Name' : 'Zue train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1800hrs', 'Date':today},
-	{'Name' : 'Wzauq train','Departure' : 'nairobi','Destination' : 'mombasa','Time' : '1900hrs', 'Date':today}
+	{'Name' : 'Spark train','Departure' : 'nairobi','Destination' : 'Mombasa','Time' : '0400hrs', 'Date':today},
+	{'Name' : 'Bullet train','Departure' : 'nairobi','Destination' : 'Mombasa','Time' : '0600hrs', 'Date':today},
+	{'Name' : 'King train','Departure' : 'nairobi','Destination' : 'Mombasa','Time' : '0700hrs', 'Date':today},
+	{'Name' : 'Spring train','Departure' : 'nairobi','Destination' : 'Mombasa','Time' : '0800hrs', 'Date':today},
+	{'Name' : 'Cue train','Departure' : 'nairobi','Destination' : 'Mombasa','Time' : '1000hrs', 'Date':today},
+	{'Name' : 'Bull train','Departure' : 'nairobi','Destination' : 'Mombasa','Time' : '1100rs', 'Date':today},
+	{'Name' : 'Spinner train','Departure' : 'nairobi','Destination' : 'Mombasa','Time' : '1200hrs', 'Date':today},
+	{'Name' : 'Wave train','Departure' : 'nairobi','Destination' : 'Mombasa','Time' : '1400hrs', 'Date':today},
+	{'Name' : 'Knight train','Departure' : 'nairobi','Destination' : 'Mombasa','Time' : '1500hrs', 'Date':today},
+	{'Name' : 'Mini train','Departure' : 'nairobi','Destination' : 'Mombasa','Time' : '1700hrs', 'Date':today},
+	{'Name' : 'Zue train','Departure' : 'nairobi','Destination' : 'Mombasa','Time' : '1800hrs', 'Date':today},
+	{'Name' : 'Wzauq train','Departure' : 'nairobi','Destination' : 'Mombasa','Time' : '1900hrs', 'Date':today},
+	{'Name' : 'Knight train','Departure' : 'nairobi','Destination' : 'Mombasa','Time' : '1500hrs', 'Date':today},
+	{'Name' : 'Mini train','Departure' : 'nairobi','Destination' : 'Mombasa','Time' : '1700hrs', 'Date':today},
+	{'Name' : 'Zue train','Departure' : 'nairobi','Destination' : 'Mombasa','Time' : '1800hrs', 'Date':today},
+	{'Name' : 'Wzauq train','Departure' : 'nairobi','Destination' : 'Mombasa','Time' : '1900hrs', 'Date':today}
 
 ]
 
