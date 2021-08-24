@@ -1,15 +1,63 @@
+
+.ticket-booking-holder{
+	display: flex;
+	padding-top: 16px;
+	padding-bottom: 8px;
+	overflow: hidden;
+	overflow-x: scroll;
+
+
+}
+.ticket-booking{
+	display: flex;
+	padding-top: 16px;
+	padding-bottom: 8px;
+	border: 1px solid #fff;
+	box-shadow: 0 0 1rem 0 rgba(0 ,0,0,0.2);
+	
+
+
+}
+.ticket-terminal{
+	min-width: 630px;
+	padding-left: 16px;
+	
+
+
+}
+.customer-infor{
+	min-width: 400px;
+	
+}
+.myticket{
+	background: #fff;
+	border: 2px solid dodgerblue;
+	min-width: 600px;
+}
+.ticket-title{
+	background: dodgerblue;
+
+}
+#ticket-data{
+	display: flex;
+}
 .holder{
 	position: relative;
+}
+#ticket-seats{
+	margin-left: 24px;
 }
 
 .card{
 	border: 1px solid #fff;
-	border-radius: 15px;
 	box-shadow: 0 0 1rem 0 rgba(0 ,0,0,0.2); 
 	font-size: 1.5rem;
 	overflow: hidden;
 	position: relative;
-	width: 800px;
+	display: flex;
+	padding-top: 16px;
+	padding-bottom: 8px;
+	justify-content: center;
 }
 .card:before{
 	background-color: rgb(255, 255,255, 0.3);
@@ -25,6 +73,14 @@
 	margin-left: 30px;
 	position: relative;
 	z-index: 2;
+
+}
+.ticket-text{
+	color: #6f7886;
+	margin-top: 30px;
+	margin-left: 30px;
+	position: relative;
+	font-size: 20px;
 
 }
 .card svg{
@@ -63,3 +119,33 @@ height: 40px;
 	background: dodgerblue;
 
 	}
+.myinput{
+	padding: 8px 12px;
+	min-width: 250px;
+	border-radius: 5px;
+}
+.large-text{
+	font-size: 24px;
+}
+tr button{
+	padding: 8px 12px;
+	outline: none;
+	width: 40px;
+	font-size: 18px;
+	color: #6f7886;
+}
+.submit-book{
+	min-width: 250px;
+	padding: 12px 8px;
+	background:dodgerblue;
+	font-size: 20px;
+	border-radius: 5px;
+}
+.print-ticket{
+	min-width: 250px;
+	padding: 8px 12px;
+	background: dodgerblue;
+	outline: none;
+	font-size: 20px;
+	border-radius: 5px;
+}

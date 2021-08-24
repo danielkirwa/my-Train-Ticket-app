@@ -23,6 +23,13 @@
 	background-color: #eeeeee;
 	border: 2px solid dodgerblue;
 }
+.main-context input{
+	border-radius: 5px;
+	width: 30%;
+	padding: 12px 8px;
+	background-color: #eeeeee;
+	border: 2px solid dodgerblue;
+}
 #btnhomebooknow{
 	width: 80%;
 	padding: 12px 8px;

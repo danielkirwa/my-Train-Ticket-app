@@ -90,7 +90,7 @@
 	 	//alert("Current train has departed");
 	 	depaturetimeoption.style.border = "2px solid red";
 	 }else if(depaturetimecode < hournow){
-	 	//alert(" train has departed");
+	 //	alert(" train has departed");
 	 	depaturetimeoption.style.border = "2px solid red";
 	 }else if(depaturetimecode > hournow){
 	 	readyBookingDetails();
@@ -98,10 +98,10 @@
 		depaturetimeoption.style.border = "2px solid green";
 		alert("Good to take  off");
 		// book details validated combine ticket 
-
+		
 		 let tickettag = userdepeturetermineivalue+userdestinstiontermineivalue;
 
-		 let ticketdetails = [{
+		 let ticketdetails = {
 		 	TicketTag : tickettag,
 		 	TicketDepature : userdepeturetermineivalue,
 		 	TicketDestination : userdestinstiontermineivalue,
@@ -109,12 +109,12 @@
 		 	TicketTime : userdepaturetimevalue,
 		 	TicketCategory : userticketcategoryvalue,
 		 	TicketCount : ticketcount
-		 }]
+		 }
 
 		 localStorage.setItem("myTicket", JSON.stringify(ticketdetails));
 
 		 console.log(ticketdetails);
-		 numberOfTicket();
+		 //numberOfTicket();
 
 		 /*localStorage.setItem('Depatureterminal', userdepeturetermineivalue);
 		 localStorage.setItem('Destinationterminal', userdestinstiontermineivalue);
@@ -137,7 +137,7 @@
 
 		 let tickettag = userdepeturetermineivalue+userdestinstiontermineivalue;
 
-		 let ticketdetails = [{
+		 let ticketdetails = {
 		 	TicketTag : tickettag,
 		 	TicketDepature : userdepeturetermineivalue,
 		 	TicketDestination : userdestinstiontermineivalue,
@@ -145,12 +145,12 @@
 		 	TicketTime : userdepaturetimevalue,
 		 	TicketCategory : userticketcategoryvalue,
 		 	TicketCount : ticketcount
-		 }]
+		 }
 
 		 localStorage.setItem("myTicket", JSON.stringify(ticketdetails));
 
 		 console.log(ticketdetails);
-		 numberOfTicket();
+		// numberOfTicket();
 		
 		 /*localStorage.setItem('Depatureterminal', userdepeturetermineivalue);
 		 localStorage.setItem('Destinationterminal', userdestinstiontermineivalue);
@@ -177,7 +177,8 @@
    		localStorage.setItem('NumberOfTickets' ,  1 );
    		document.querySelector('.mytickes').textContent = 1 ;
    	}
-   	addTicket();
+   
+  addTicket();
    }
 
     // increatement or insert new ticket
@@ -203,6 +204,7 @@
     			[ticketbooked.TicketTag]:ticketbooked
     		}
     	}
+    
 
     	localStorage.setItem('myTicket' ,JSON.stringify(ticketbooked));
     }
@@ -224,6 +226,7 @@ var btndatetimevalidate = document.getElementById('depaturetimeoption');
 
 	  var  period = Math.floor((userselecteddatetime - todaydate)/(1000 * 60 * 60 * 24)+1);
 
+//console.log(period);
 	
 	// get user selected hour of travell
 	let depaturetime = document.getElementById('depaturetimeoption');
@@ -232,13 +235,15 @@ var btndatetimevalidate = document.getElementById('depaturetimeoption');
 	// get real actual time
 	var datetoday = new Date();
 	var hournow = datetoday.getHours();
+	console.log(depaturetimecode + " " + hournow);
 	 if(period == 0){
 	 	depaturedate.style.border = "2px solid green";
+	 	console.log("working at 0 day")
 	 if (depaturetimecode == hournow) {
-	 	//alert("Current train has departed");
+	 alert("Current train has departed");
 	 	depaturetimeoption.style.border = "2px solid red";
 	 }else if(depaturetimecode < hournow){
-	 	//alert(" train has departed");
+	 alert(" train has departed");
 	 	depaturetimeoption.style.border = "2px solid red";
 	 }else if(depaturetimecode > hournow){
 	 	alert(" Catch the train before : " + depaturetimecode + "  " + "Hours" );

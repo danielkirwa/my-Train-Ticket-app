@@ -1,68 +1,32 @@
 
   // show number of tickets 
 
-
-
- let btncancel = document.querySelector('.btncancelallbook');
- // loop through cancel button
-
- btncancel.addEventListener('click' , () =>{
-
- 	var confirmcancel = confirm("Sure To Cancel Book");
- 	if(confirmcancel){
- 		document.querySelector('.holder').innerHTML = "";
- 	}else{
- 		alert("Opparaion canceled");
- 	}
-
- 		
- 		
- 	})
-
- /*for (let i = 0 ; i < btncancel.length ;  i++) {
- 	
- 	btncancel[i].addEventListener('click' , () =>{
- 		document.querySelector('.holder').innerHTML = "";
- 		alert('helloe');
- 	})
- }*/
+var ticketNumber = document.getElementById('ticket-number');
+var ticketCategory = document.getElementById('ticket-category');
+var ticketDepatureTerminal = document.getElementById('ticket-depature-terminal');
+var ticketDestinationtTerminal = document.getElementById('ticket-destination-terminal');
+var ticketDate = document.getElementById('ticket-date');
+var ticketTime = document.getElementById('ticket-time');
+var processingTickets = document.querySelector('.processing-tickets');
 
  // populate ticket
 
  function populateticket() {
  	// body...
  		let ticketDetails = localStorage.getItem('myTicket');
- 		 ticketDetails = JSON.parse(ticketDetails);
+  ticketDetails = JSON.parse(ticketDetails);
  		 let ticketHolder = document.querySelector('.holder');
 
  		 if(ticketDetails){
- 		 	console.log('available')
- 		 	Object.values(ticketDetails).map(details =>{
- 		 		ticketHolder.innerHTML += `
- 		 		<div class="card">
-		<div class="card-text">
-			Travel in Style
-			<br>
-			<small>Name : #name #name</small><br>
-			<small id="cardcartegory">Category : ${details.TicketCategory}</small><br>
-			<small id="cardtime">Depature Time  : ${details.TicketTime}</small><br>
-			<small id="carddepature"> Depature Terminal : ${details.TicketDepature}</small><br>
-			<small id="carddestination">Destination Terminal :${details.TicketDestination}</small><br>
-			<small id="carddate"> Depature Date :${details.TicketDate}</small><br>
-			
-			<button class="btncancelbook">Cancel Booking</button>
-		</div>
-		<svg> 
-			<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="#00000000" />
-			<text fill="green" font-size="18" font-family="Verdana" x="12" y="60">active</text>
-		 </svg>
-	</div>
-	 <br><br>
- 		 		`
- 		 	})
+ 		processingTickets.innerHTML = "Booking in progress"
+ 		 processingTickets.style.color = "green";
+ 		 	 ticketCategory.innerHTML = ticketDetails.TicketCategory;
+
+ 		 
  		 }else{
- 		 	let buttoninfor = document.querySelector('.btncancelallbook');
- 		 	buttoninfor.innerHTML = "No Bookings Yet !!!"
+ 		 
+ 		 	processingTickets.innerHTML = "No Bookings yet"
+ 		 	processingTickets.style.color = "dogerblue";
  		 }
 
 
