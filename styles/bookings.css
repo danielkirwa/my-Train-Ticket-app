@@ -149,3 +149,10 @@ tr button{
 	font-size: 20px;
 	border-radius: 5px;
 }
+table tr td button {
+	background: #00000000;
+}
+.booked-seat{
+	background: dodgerblue;
+	color: white;
+}
