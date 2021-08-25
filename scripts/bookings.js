@@ -129,6 +129,66 @@ seat2.addEventListener('click' , () =>{
   bookedSeatNumbers = bookedSeatNumbers + "2,";
   writeSeatNumber();
 })
+let seat3 = document.getElementById("seat-3");
+seat3.addEventListener('click' , () =>{
+  document.querySelector('.seat-4').className = "booked-seat";
+  bookedSeatNumbers = bookedSeatNumbers + "3,";
+  writeSeatNumber();
+})
+let seat4 = document.getElementById("seat-4");
+seat4.addEventListener('click' , () =>{
+  document.querySelector('.seat-4').className = "booked-seat";
+  bookedSeatNumbers = bookedSeatNumbers + "4,";
+  writeSeatNumber();
+})
+let seat5 = document.getElementById("seat-5");
+seat5.addEventListener('click' , () =>{
+  document.querySelector('.seat-5').className = "booked-seat";
+  bookedSeatNumbers = bookedSeatNumbers + "5,";
+  writeSeatNumber();
+})
+let seat6 = document.getElementById("seat-6");
+seat6.addEventListener('click' , () =>{
+  document.querySelector('.seat-6').className = "booked-seat";
+  bookedSeatNumbers = bookedSeatNumbers + "6,";
+  writeSeatNumber();
+})
+let seat7 = document.getElementById("seat-7");
+seat7.addEventListener('click' , () =>{
+  document.querySelector('.seat-7').className = "booked-seat";
+  bookedSeatNumbers = bookedSeatNumbers + "7,";
+  writeSeatNumber();
+})
+let seat8 = document.getElementById("seat-8");
+seat8.addEventListener('click' , () =>{
+  document.querySelector('.seat-8').className = "booked-seat";
+  bookedSeatNumbers = bookedSeatNumbers + "8,";
+  writeSeatNumber();
+})
+let seat9 = document.getElementById("seat-9");
+seat9.addEventListener('click' , () =>{
+  document.querySelector('.seat-9').className = "booked-seat";
+  bookedSeatNumbers = bookedSeatNumbers + "9,";
+  writeSeatNumber();
+})
+let seat10 = document.getElementById("seat-10");
+seat10.addEventListener('click' , () =>{
+  document.querySelector('.seat-10').className = "booked-seat";
+  bookedSeatNumbers = bookedSeatNumbers + "10,";
+  writeSeatNumber();
+})
+let seat11 = document.getElementById("seat-11");
+seat11.addEventListener('click' , () =>{
+  document.querySelector('.seat-11').className = "booked-seat";
+  bookedSeatNumbers = bookedSeatNumbers + "11,";
+  writeSeatNumber();
+})
+let seat12 = document.getElementById("seat-12");
+seat12.addEventListener('click' , () =>{
+  document.querySelector('.seat-12').className = "booked-seat";
+  bookedSeatNumbers = bookedSeatNumbers + "12,";
+  writeSeatNumber();
+})
 
 function writeSeatNumber() {
   // body...
