@@ -131,7 +131,7 @@ seat2.addEventListener('click' , () =>{
 })
 let seat3 = document.getElementById("seat-3");
 seat3.addEventListener('click' , () =>{
-  document.querySelector('.seat-4').className = "booked-seat";
+  document.querySelector('.seat-3').className = "booked-seat";
   bookedSeatNumbers = bookedSeatNumbers + "3,";
   writeSeatNumber();
 })
@@ -195,3 +195,35 @@ function writeSeatNumber() {
   let bookedNumbers = document.getElementById('bookedNumbers');
   bookedNumbers.innerHTML = bookedSeatNumbers;
 }
+
+let btnsubmutboob = document.getElementById('submit-book');
+btnsubmitbook.addEventListener('click' , () =>{
+  let firstName = document.getElementById('customer-fname');
+  let secondName = document.getElementById('customer-sname');
+  let phoneNumber = document.getElementById('customer-number');
+  if (firstName.value == "" || secondName.value == "" || phoneNumber.value == "") {
+    alert("fill all fields")
+  }else{
+       let customerdetails = {
+      Fname : firstName.value,
+      Sname : secondName.value,
+      phoneNumber : phoneNumber.value,
+   
+     }
+
+      localStorage.setItem('customerDetails' , JSON.stringify(customerdetails));
+      populateticketName();
+  }
+})
+function populateticketName(){
+     let ticketName = localStorage.getItem('customerDetails');
+      if (ticketName) {
+         ticketName = JSON.parse(ticketName); 
+  let displayName = document.getElementById('ticket-name');
+  displayName.innerHTML = ticketName.Fname + "  " +ticketName.Sname + "  " +ticketName.phoneNumber;
+
+      }else{
+  }
+}
+
+ populateticketName();
